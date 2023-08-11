@@ -54,7 +54,7 @@ object CaesarCipher {
           decryptedStr.append(ch)
         }
         else {
-          var extraMoves = ch - aAChar
+          var extraMoves = aAChar - ch
           var newShiftedChar = (zZChar - extraMoves + 1).toChar
           decryptedStr.append(newShiftedChar)
 

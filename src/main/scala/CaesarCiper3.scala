@@ -61,10 +61,10 @@ object CaesarCiper3 {
     var str = readLine()
     printf("Enter number of shifts:")
     var shifts = readInt()
-    var enResult = Cipher(str, shifts, Encryption)
-    println("Encrypted String is: " + enResult)
-    var deResult = Cipher(enResult, shifts, Decryption)
-    println("Decrypted String is: " + deResult)
+    var encResult = Cipher(str, shifts, Encryption)
+    println("Encrypted String is: " + encResult)
+    var decResult = Cipher(encResult, shifts, Decryption)
+    println("Decrypted String is: " + decResult)
 
   }
 
